@@ -14,9 +14,8 @@
         <li><a href="#História">História dos computadores</a></li>
         <li><a href="#Clients">O que são <i>Clients</i>?</a></li>
         <li><a href="#Servers">O que são <i>Servers</i>?</a></li>
-        <li><a href="#">Como é uma estrutura básica de um HTML?</a></li>
-        <li><a href="#">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
         <li><a href="#">Links de referências</a></li>
+        
     </ul>
 
         <h2 id="história" >História dos computadores</h2>
@@ -59,8 +58,8 @@
                     <li><strong><u>Microsoft e Windows (1985):</u></strong>Bill Gates lançou o Windows, tornando os PCs mais acessíveis.</li>
                 </ul>
             </li>
-            <li>
 
+            <li>
                 <h3>Era da Internet e Computação Moderna</h3>
                 <ul>
                     <li><strong><u>Anos 90:</u></strong> Expansão da internet e computadores mais acessíveis.</li>
@@ -70,33 +69,211 @@
             </li>
         </ol>
 
-        <h2 id="Clients" >O que são Clients ?</h2>
+
+        <h2 id="Clients" > 📌 O que são Clients ?</h2>
         <small> <a href="#inicio"> (Voltar)</a></small>
         <p>Um cliente é um dispositivo ou programa que solicita serviços ou recursos a um servidor. Ele depende da resposta do servidor para obter informações ou executar ações.
         <br>Um cliente pode ser qualquer coisa, desde um navegador de internet até um aplicativo de música ou um jogo online.</p>
-        <h3>Exemplos de clientes:</h3>
+        <h3>📌 Tipos de Clientes</h3>
+        <p>Os clientes podem ser classificados de diferentes maneiras, dependendo de como interagem com os servidores.</p>
 
-        <ul>
-            <li><strong><u>Navegador da web</u></strong>(Chrome, Firefox, Edge)→ Solicita páginas da web a um servidor.</li>
-            <li><strong><u>Aplicativo de e-mail</u></strong>→ Solicita mensagens a um servidor de e-mails.</li>
-            <li><strong><u>Jogos online </u></strong>→ O jogo envia e recebe dados de um servidor para sincronizar o estado do jogo.</li>
-            <li><strong><u>Aplicativos móveis</u></strong>(WhatsApp, Spotify, Netflix) → Pedem dados a servidores para exibir conteúdos.</li>
-        </ul>
-        <h3>Como um Cliente se Comunica com um Servidor ?</h3>
+        <h4>1️⃣Cliente Leve (Thin Client)</h4>
+        <pre>
+            💡 O que é?
+            Um cliente leve é um programa que depende fortemente do servidor para processamento e armazenamento de dados.
+             Ele tem pouca lógica própria e apenas exibe o que recebe do servidor.
+            
+            📌 Exemplo:
+            
+            Um navegador web (Chrome, Firefox, Edge) → Ele apenas solicita e exibe páginas processadas por um servidor web.
+            Aplicativos de streaming (Netflix, Spotify, YouTube) → A reprodução do conteúdo depende do servidor.
+            📌 Vantagens:
+            ✅ Menos consumo de recursos no cliente.
+            ✅ Aplicações acessíveis via internet sem instalação complexa.
+            
+            📌 Desvantagens:
+            ❌ Depende da conexão com o servidor para funcionar.
+            ❌ Pode ter latência se a internet for lenta.
+        </pre>
+
+        <h4>2️⃣ Cliente Pesado (Thick Client ou Fat Client)</h4>
+        <pre>
+            💡 O que é?
+            Um cliente pesado executa grande parte do processamento localmente, reduzindo a dependência do servidor. 
+            Ele pode armazenar dados temporariamente e realizar cálculos antes de se comunicar com o servidor.
+            
+            📌 Exemplo:
+            
+            Aplicativos de jogos offline que sincronizam dados quando online.
+            Aplicações empresariais que podem funcionar sem conexão direta com o servidor.
+            📌 Vantagens:
+            ✅ Funciona mesmo sem conexão com o servidor.
+            ✅ Melhor desempenho para certas operações.
+            
+            📌 Desvantagens:
+            ❌ Ocupa mais espaço e memória no dispositivo do usuário.
+            ❌ Pode ser mais difícil de atualizar, pois cada cliente precisa da nova versão instalada
+        </pre>
+
+        <h4>3️⃣ Cliente Híbrido</h4>
+        <pre>
+            💡 O que é?
+            Um cliente híbrido combina características do cliente leve e do cliente pesado. Ele pode processar algumas funções localmente, mas ainda depende do servidor para certos recursos.
+            
+            📌 Exemplo:
+            
+            Google Docs: Permite edição offline e sincroniza as mudanças quando a internet está disponível.
+            Jogos como Minecraft ou Fortnite: Possuem modo offline, mas dependem do servidor para modos multiplayer.
+            📌 Vantagens:
+            ✅ Pode funcionar offline e sincronizar depois.
+            ✅ Melhor experiência para o usuário.
+            
+            📌 Desvantagens:
+            ❌ Pode ser mais complexo de desenvolver.
+        </pre>
+            
+        <h3>📌 Como um Cliente se Comunica com um Servidor?</h3>
         <p>Os clientes utilizam protocolos de comunicação para trocar informações com servidores. Os mais comuns são:</p>
-        <ul>
-            <li><strong><u>HTTP/HTTPS </u></strong>→ Para acessar páginas web.</li>
-            <li><strong><u>FTP</u></strong> → Para transferência de arquivos.</li>
-            <li><Strong><u>SMTP/IMAP/POP3</u></Strong> → Para envio e recebimento de e-mails.</li>
-            <li> <Strong><u>WebSockets</u></Strong> → Para comunicação em tempo real, como chats e jogos online.</li>
-        </ul>
-        
-        <h2 id="#Servers">O que são Servidores ?</h2>
+        <pre>
+            📌 HTTP/HTTPS → Para acessar páginas web.
+            📌 FTP → Para transferência de arquivos.
+            📌 SMTP/IMAP/POP3 → Para envio e recebimento de e-mails.
+            📌 WebSockets → Para comunicação em tempo real, como chats e jogos online.
+            
+        </pre>
+
+        <h3>📌 Exemplos de Clientes no Dia a Dia</h3>
+        <pre>
+            🎯 Navegador Web → Acessa sites e busca informações no Google.
+            🎯 WhatsApp → Envia e recebe mensagens dos servidores do WhatsApp.
+            🎯 Aplicativos de Banco → Solicita saldo e faz transações.
+            🎯 Jogos Online → Se conecta a servidores para partidas multiplayer.
+            🎯 Spotify/Netflix/YouTube → Pede músicas e vídeos para os servidores.
+            
+        </pre>
+
+        <h2 id="Servers" >📌 O que são Servidores ?</h2>
         <small> <a href="#inicio"> (Voltar)</a></small>
-        <p>Um servidor é um computador ou programa responsável por fornecer serviços, recursos ou dados para um ou mais clientes em uma rede. Ele processa as solicitações dos clientes e retorna uma resposta.
-        <br> Os servidores podem ser físicos (máquinas dedicadas) ou virtuais (executados em nuvem, como AWS, Google Cloud).</p>
+        
+           <p>
+            Um servidor é um computador ou programa responsável por fornecer serviços, recursos ou dados para um ou mais clientes em uma rede. <br> 
+            Ele processa as solicitações dos clientes e retorna uma resposta. <br>
+            Os servidores podem ser físicos (máquinas dedicadas) ou virtuais (executados em nuvem, como AWS, Google Cloud).</p> 
+        
+        <h3>📌 Tipos de Servidores</h3>
+        <p>Existem vários tipos de servidores, dependendo do serviço que oferecem:</p>
+        <h4>1️⃣ Servidor Web</h4>
+        <pre>
+            💡 O que faz?
+            Armazena e entrega páginas da web para os navegadores dos clientes via HTTP/HTTPS.
+            
+            📌 Exemplo:
+            
+            O Google Chrome acessa um site → O servidor web envia a página para ser exibida.
+            📌 Principais tecnologias:
+            
+            Apache, Nginx, Microsoft IIS
+        </pre>
+
+        <h4>2️⃣ Servidor de Arquivos</h4>
+        <pre>
+            💡 O que faz?
+            Armazena e gerencia arquivos para que os clientes possam acessá-los ou baixá-los.
+            
+            📌 Exemplo:
+            
+            Google Drive e Dropbox armazenam arquivos que os usuários podem acessar de qualquer lugar.
+            📌 Principais tecnologias:
+            
+            Samba, FTP, NFS
+
+        </pre>
+
+        <h4>3️⃣ Servidor de Banco de Dados</h4>
+        <pre>
+            💡 O que faz?
+            Gerencia grandes volumes de dados e responde às consultas feitas por aplicativos.
+            
+            📌 Exemplo:
+            
+            Um app bancário solicita o saldo do usuário → O servidor de banco de dados retorna essa informação.
+            📌 Principais tecnologias:
+            
+            MySQL, PostgreSQL, MongoDB, SQL Server
+
+        </pre>
+
+        <h4>4️⃣ Servidor de Aplicações</h4>
+        <pre>
+            💡 O que faz?
+            Executa a lógica de negócios de um sistema, processando dados antes de enviá-los ao cliente.
+            
+            📌 Exemplo:
+            
+            O WhatsApp precisa de um servidor para processar mensagens antes de entregá-las aos destinatários.
+            📌 Principais tecnologias:
+            
+            Node.js, Spring Boot, Django, Express.js
+            
+        </pre>
+
+        <h4>5️⃣ Servidor de E-mail</h4>
+        <pre>
+            💡 O que faz?
+            Envia e recebe e-mails para os usuários.
+            
+            📌 Exemplo:
+            
+            O Gmail possui servidores para processar e-mails e armazená-los.
+            📌 Principais tecnologias:
+            
+            SMTP, IMAP, Microsoft Exchange
+            
+        </pre>
+
+        <h4>6️⃣ Servidor de Jogos</h4>
+        <pre>
+            💡 O que faz?
+            Sincroniza jogadores em partidas multiplayer e mantém o estado do jogo atualizado.
+            
+            📌 Exemplo:
+            
+            No Fortnite, o servidor mantém as posições dos jogadores e envia as atualizações para todos.
+            📌 Principais tecnologias:
+            
+            AWS GameLift, Photon Engine
+
+        </pre>
+
+        <h3>📌 Como um Servidor Funciona?</h3>
+        <pre>
+            1️⃣ O cliente faz uma requisição para o servidor.
+            2️⃣ O servidor processa o pedido e busca as informações necessárias.
+            3️⃣ O servidor responde ao cliente com os dados ou serviços solicitados.
+            
+            💡 Exemplo na Web:
+            
+            O navegador digita www.google.com.
+            O servidor web do Google recebe a solicitação e retorna a página inicial.
+
+        </pre>
+        <h2>📌Links de referências</h2>
+        <ul>
+            <li><a href="https://www.w3schools.com"></a>W3Schools</li>
+            <li><a href="https://web.dio.me/"></a>DIO</li>
+        </ul>
+
+            
+
             
     
     </body>
     
 </html>
+
+
+        
+            
+            
+        
+        
